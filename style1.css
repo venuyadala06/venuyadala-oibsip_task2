@@ -1,0 +1,299 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url("bp3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color:#000;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: Broadway;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FF69b4;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.content{
+    color: #000;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateX(-28%);
+    text-align: center;
+}
+.content h1{
+    font-size:100px;
+    margin-top: 10px;
+    margin-left: 280px;
+    font-family: Bradley Hand ITC;
+    
+}
+.content h3{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: Bradley Hand ITC;
+    font-size:50px;
+    margin-left: 330px;
+}
+.content h4{
+    margin: 0px auto;
+    font-weight: 200;
+    line-height: 25px;
+    font-family: Bradley Hand ITC;
+    font-size:25px;
+    margin-left: 0px;
+}
+
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    position:relative;
+    overflow:hidden;
+}
+span{
+    background: #ff69b4;
+    height:100%;
+    width:0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition:0.8s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.about{
+    width:100%;
+    padding: 100px 0px;
+    background-color: #fff;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.aboutme{
+    width:550px;
+}
+.main{
+    width:1130px;
+    max-width:95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aboutme h2{
+    color:  #FF69b4;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: Berlin Sans FB Demi;
+}
+.aboutme h5{
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-family: Freestyle Script;
+}
+.aboutme p{
+    color: #FF69b4;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.aboutme button{
+    color:black;
+    background:  #FF69b4;
+    transition:1s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #FF69b4;
+    cursor:pointer;
+}
+.service{
+    background:#ffb6c1;
+    width:100%;
+    padding:100px 0px;
+}
+.title h2{
+    color: black;
+    font-size:75px;
+    width:1130px;
+    margin:30px auto;
+    text-align:center;
+    font-family: Berlin Sans FB Demi;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height:350px;
+    width:335px;
+    padding:20px 35px;
+    background:  #fff;
+    border-radius: 20px;
+    margin: 15px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#000;
+}
+h5{
+    color:#000;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: Freestyle Script;
+}
+.para p{
+    color: #000;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    width:200px;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    position:relative;
+    overflow:hidden;
+    background: #ffb6c1;
+    transition:1s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(93, 70, 196);
+    cursor:pointer;
+}
+.contactMe{
+    width: 100%;
+    height: 290px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactMe p{
+    color: #FF69b4;
+    font-size: 80px;
+    font-weight:bold;
+    font-family: Freestyle Script;
+}
+.service1{
+    background:#ffb6c1;
+    width:100%;
+    padding:100px 0px;
+}
+.title1 h2{
+    color: black;
+    font-size:75px;
+    width:1130px;
+    margin:15px auto;
+    text-align:center;
+    font-family: Berlin Sans FB Demi;
+}
+.box1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card1{
+    height:140px;
+    width:335px;
+    padding:0px 35px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 10px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card1 i{
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin: 15px 0px;
+    color:#000;
+}
+.card1 h5{
+    color:black;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: Freestyle Script;
+}
+.para1 p{
+    color: #000;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 0px;
+}
